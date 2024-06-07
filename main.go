@@ -5,7 +5,9 @@ import (
 )
 
 func main() {
+	gin.SetMode(gin.ReleaseMode)
 	// 1. 创建一个默认的Gin引擎
+
 	server := gin.Default()
 
 	// 2. 定义路由：当使用 GET 方法访问路径为 /hello 时，执行回调函数
